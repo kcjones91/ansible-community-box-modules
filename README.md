@@ -95,8 +95,8 @@ Or set it dynamically in your playbooks.
 ## Future Enhancements
 - More Box API integrations (File Uploads, Metadata, Sharing)
 - Better error handling & logging
-- Support for OAuth 2.0 instead of developer tokens
-- Ansible Galaxy publishing
+- Exploring support for OAuth 2.0 instead of developer tokens
+- Ansible Galaxy publishing (We will see)
 
 ---
 
