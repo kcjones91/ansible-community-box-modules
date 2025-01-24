@@ -6,9 +6,8 @@
 
   - name: Create new Box folder
     create_box_folder:
-      token: "wBmZCE9cPDa4uL9SImrFqRfembWhini9"
-      file_name: "Test-automation.txt"
-      file_path: ./
+      token: "api123"
+      name: "Test_folder"
       parent_folder_id: 0
     register: box_files
 
