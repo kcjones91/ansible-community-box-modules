@@ -81,7 +81,23 @@ Or set it dynamically in your playbooks.
         var: new_folder
 ```
 
----
+### 4. Upload file to Box
+```yaml
+- name: Upload a file to Box
+  hosts: localhost
+  tasks:
+    - name: Upload file
+      create_box_folder:
+        token: "YOUR_BOX_TOKEN"
+        src_file_path: "/tmp/Test-automation.txt"
+        dest_file_name: "Test-automation.txt" # This file name will be applied to the uploaded file to box
+        parent_folder_id: "0"
+      register: new_folder
+
+    - debug:
+        var: new_folder
+```
+
 
 ## Available Modules
 | Module Name           | Description                                          |
@@ -89,6 +105,7 @@ Or set it dynamically in your playbooks.
 | `list_box_files.py`   | Lists all files in the specified Box folder.        |
 | `list_box_folders.py` | Lists all folders inside a given parent folder.     |
 | `create_box_folder.py`| Creates a new folder inside a specified parent ID.  |
+|`ansible_box_upload.py`| Uploads a local file into folder of choice on Box.  |
 
 ---
 
