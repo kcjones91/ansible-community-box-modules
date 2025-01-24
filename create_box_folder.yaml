@@ -1,0 +1,16 @@
+- name: Create a new folder in Box
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+  - name: Create new Box folder
+    create_box_folder:
+      token: "apikey123"
+      name: "Test_folder"
+      parent_folder_id: 0
+    register: box_files
+
+  - name: Debug the output
+    debug:
+      var: box_files
