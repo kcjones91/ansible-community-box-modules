@@ -8,7 +8,7 @@
 
   - name: List all files and folders on box
     list_box_files:
-      token: "PjIK238LSvx2iA6z81WO7kbeMrUO2B3f"
+      token: "Apikey123"
     register: box_files
 
   - name: Debug the output
