@@ -1,0 +1,18 @@
+- name: List folder by folder id
+  hosts: localhost
+  gather_facts: false
+
+
+  tasks:
+
+
+  - name: List folder by folder id
+    list_box_folder_id:
+      token: "sy0VLtpVg5eXDYSpXtqHpV7GgnNcUnsj"
+      folder_id: 0
+      fields: "created_by"
+    register: box_files
+
+  - name: Debug the output
+    debug:
+      var: box_files

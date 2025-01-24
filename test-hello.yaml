@@ -1,0 +1,12 @@
+- name: Test custom module
+  hosts: localhost
+  gather_facts: false
+  tasks:
+
+    - name: Say hello
+      hello:
+        name: "Vivian"
+      register: result
+
+    - debug:
+        var: result

@@ -1,0 +1,16 @@
+- name: List all files in box
+  hosts: localhost
+  gather_facts: false
+
+
+  tasks:
+
+
+  - name: List all files and folders on box
+    list_box_files:
+      token: "PjIK238LSvx2iA6z81WO7kbeMrUO2B3f"
+    register: box_files
+
+  - name: Debug the output
+    debug:
+      var: box_files
