@@ -1,0 +1,19 @@
+- name: Upload a file to Box
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+
+  - name: Upload file to box
+    ansible_box_upload:
+      token: "apikey123"
+      src_file_path: "/tmp/Test-automation.txt"
+      dest_file_name: "Test-automation.txt"
+      parent_folder_id: "0"
+    register: box_file_upload
+
+  - name: Debug the output
+    debug:
+      var: box_file_upload
+
+
