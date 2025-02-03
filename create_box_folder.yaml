@@ -5,7 +5,7 @@
   tasks:
 
   - name: Create new Box folder
-    create_box_folder:
+    ansible_create_box_folder:
       token: "api123"
       name: "Test_folder"
       parent_folder_id: 0

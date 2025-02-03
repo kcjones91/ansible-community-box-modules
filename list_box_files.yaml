@@ -7,7 +7,7 @@
 
 
   - name: List all files and folders on box
-    list_box_files:
+    ansible_list_box_files:
       token: "Apikey123"
     register: box_files
 

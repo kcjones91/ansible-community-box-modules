@@ -7,8 +7,8 @@
 
 
   - name: List folder by folder id
-    list_box_folder_id:
-      token: "apikey123"
+    ansible_list_box_folder_id:
+      token: "gSDmiysg4U89ftN6IPD9c8mZ4vHXPPDF"
       folder_id: 0
       fields: "created_by"
     register: box_files
