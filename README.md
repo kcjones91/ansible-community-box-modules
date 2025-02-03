@@ -92,10 +92,10 @@ Or set it dynamically in your playbooks.
         src_file_path: "/tmp/Test-automation.txt"
         dest_file_name: "Test-automation.txt" # This file name will be applied to the uploaded file to box
         parent_folder_id: "0"
-      register: new_folder
+      register: uploaded_file
 
     - debug:
-        var: new_folder
+        var: uploaded_file
 ```
 
 
